@@ -18,8 +18,8 @@ include(FetchContent)
 
 FetchContent_Declare(
     async_queue
-    GIT_REPOSITORY https://github.com/yourusername/async_queue.git
-    GIT_TAG v0.1.0  # Specify a tag or commit hash
+    GIT_REPOSITORY https://github.com/HarryPehkonen/AsyncQueue.git
+    GIT_TAG v0.1.2
 )
 
 FetchContent_MakeAvailable(async_queue)
@@ -30,7 +30,7 @@ target_link_libraries(your_target PRIVATE async_queue::async_queue)
 
 ### Method 2: Manual Installation
 ```bash
-git clone https://github.com/yourusername/async_queue.git
+git clone https://github.com/HarryPehkonen/AsyncQueue.git
 cd async_queue
 mkdir build && cd build
 cmake ..
